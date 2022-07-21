@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #333652;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #E57F84;
+}
+
+#description {
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  color: #FBCFCD;
+}
+
+form {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background-color: #E57F84;
+  box-shadow: 2px 5px 10px white;
+}
+
+.form-elements {
+  margin-bottom: 25px;
+}
+
+.form-elements label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bolder;
+}
+
+.form-elements #age,#avg_glucose_level,#bmi,select {
+  border-radius: 6px;
+  padding: 10px;
+  display: block;
+  border: 1px solid #583759;
+  width: 90%;
+  box-shadow: 3px 3px 5px #DCD0FF;
+}
+.form-elements option{
+  color: #333652;
+  font-weight:bolder;
+}
+
+.button{
+  display:flex;
+  justify-content: center;
+}
+
+#button1 ,#button2{
+  margin-right:10px;
+}
+.btn{
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  /* display: block; */
+  width: 100px;
+  color: white;
+  font-weight:bolder;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); 
+}
+
+.btn:hover {
+  width: 120px;
+  height: 50px;
+  color: #DCD0FF;
+  box-shadow: 5px 5px 6px #F4EAE6;
+  font-weight:bolder;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
