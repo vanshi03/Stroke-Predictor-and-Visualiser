@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Prediction</title>
+    <style>
+        body{
+            background-color:#333652;;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="output" style="color:pink;font-size:30px; text-align:center; padding-top:30px">
+    {{visualisation_text}}
+    </div>
+    <!-- <image src="{{url_for('static',filename = 'images/Visualisation2.svg')}}" ></image> -->
+    <iframe src="{{url_for('static',filename = 'images/Visualisation1.svg')}}" height="1500px" width="100%"></iframe>
+</body>
+</html>

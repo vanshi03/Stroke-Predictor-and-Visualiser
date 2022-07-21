@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style1.css')}}">
+    <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
+    <title>Stroke Prediction</title>
+</head>
+
+<body>
+    <h1 id="title">Stroke-Prediction Form</h1>
+    <p id="description">Hey Folks!<br>This is a form for predicting whether or not you can get stroke.<br>Please enter
+        your valuable details.<br>Thank You!</p>
+        <div id="output" style="color:white;font-size: 30px;text-align: center;padding-top:30px">
+            {{ prediction_text }}
+        </div>
+    <div id="input">
+        <form id="input-form" action="{{url_for ('predict') }}" method="post">
+             <div class="form-elements">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age here" value="{{ request.form['age'] }}">
+              </div>
+            <div class="form-elements">
+                <label for="avg_glucose_level">Average Glucose Level</label>
+                <input type="text" id="avg_glucose_level" name="avg_glucose_level" placeholder="Enter your glucose-level here" value="{{ request.form['avg_glucose_level'] }}">
+            </div>
+            <div class="form-elements">
+                <label for="bmi">BMI</label>
+                <input type="text" id="bmi" name="bmi" placeholder="Enter your BMI here" value="{{ request.form['bmi'] }}">
+            </div>
+            <div class="form-elements">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                    <option value="2">Other</option>
+                </select>
+            </div>
+
+            <div class="form-elements">
+                <label for="hypertention">Hypertension</label>
+                <select id="hypertention" name="hypertention">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-elements">
+                <label for="heart_disease">Heart Disease</label>
+                <select id="heart_disease" name="heart_disease">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-elements">
+                <label for="ever_married">Ever Married</label>
+                <select id="ever_married" name="ever_married">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-elements">
+                <label for="work_type">Work Type</label>
+                <select id="work_type" name="work_type">
+                    <option value="2">Private</option>
+                    <option value="3">Self Employed</option>
+                    <option value="4">Children</option>
+                    <option value="0">Govt Job</option>
+                    <option value="1">Never Worked</option>
+                </select>
+            </div>
+            <div class="form-elements">
+                <label for="residence_type">Residence Type</label>
+                <select id="residence_type" name="residence_type">
+                    <option value="0">Rural</option>
+                    <option value="1">Urban</option>
+                </select>
+            </div>
+            <div class="form-elements">
+                <label for="smoking_status">Smoking Status</label>
+                <select id="smoking_status" name="smoking_status">
+                    <option value="2">Never Smoked</option>
+                    <option value="0">Unknown</option>
+                    <option value="1">Formally Smoked</option>
+                    <option value="3">Smokes</option>
+                </select>
+            </div>
+            <div class="button">
+                <div id="button1">
+                    <input type="submit" name="submit_button_1" value="Prediction" class="btn">
+                </div>
+                <div id="button2">
+                    <input type="submit" name="submit_button_2" value="Visualisation" class="btn">
+                </div>
+            </div> 
+         </form>
+    </div>
+</body>
+</html>
