@@ -1,10 +1,10 @@
 # Stroke-Predictor-and-Visualiser
 ## I created a website on stroke prediction and visualisation
-### Blueprint 🔷
+### ⏩ Blueprint
 <ul>
   <li>Build a model , Language used : Python</li>
   <li>Develop front-end of website, Language used : HTML,CSS</li>
-  <li>Integrate both fron-end and back-end(model) , Framework used : Flask</li>
+  <li>Integrate both front-end and back-end(model) , Framework used : Flask</li>
 </ul>
 
 ### 1️⃣ Building the model
@@ -30,18 +30,17 @@
 HTML Files : templates/file_name.html<br>
 CSS Files : static/css_file_name.css
 <ul>
-  -----HTML-----
+  🔶 HTML
   <li>Make an index.html file inside template folder</li>
   <li>Develop an HTML form</li>
   <li>The form after submission will go to a flask file(app.py) , so form-action will be the route/url to the method that will be called after form submission</li>
   <li>Values of dropdown-option should match with the values you got after encoding your data while building the model</li>
-  <li>Create variable inside jinja synatx : {{}} so that later this variable can be used to display your result after from processing</li>
-  <br>
+  <li>Create variable inside jinja syntax : {{}} so that later this variable can be used to display your result after from processing</li>
   <li> Make another Visualisation.html file to display your visualisation</li>
   <li> Use an iframe or img src to render the url of the saved visualisation</li>
-  ----CSS-----
+  🔶 CSS
   <li>Make an css file inside static folder and style your form</li>
-  <li>Link your css toindex.html using jinja : {{}}</li>
+  <li>Link your css to index.html using jinja : {{}}</li>
 </ul>
 
 ### 3️⃣ Integration
@@ -68,12 +67,15 @@ Prerequisite : Install the flask framework on your system using $ pip install Fl
   <li>Copy the url and paste it in your web browser</li>
 </ul>
 
-Attaching some screenshots for your reference
+Enter your information and View the result😎<br>
+Voila!!🤞🤞<br>
+
+Attaching some screenshots for reference
 ![Capture](https://user-images.githubusercontent.com/56712218/180594872-59164bf7-be24-4abd-8df3-dfc23f67676b.PNG)
-![88_pred](https:/![Cannot_pred](https://user-images.githubusercontent.com/56712218/180594881-2bdeaba9-fa5d-47ac-8018-5d8c36a18f67.PNG)
-/user-images.githubusercontent.com/56712218/180594878-0b1e5ad5-0ff3-45fa-b177-63998891ea5e.PNG)
-**Since visualisation is quite large this is only a part of visualisation , you an view full visualsation inside static\images\Visualisation1.svg
+![88_pred](https://user-images.githubusercontent.com/56712218/180595145-929c8e75-fcec-42f0-91ac-2030bfffbef7.PNG)
+![Cannot_pred](https://user-images.githubusercontent.com/56712218/180595214-48598896-0ab2-4a0e-85c4-9b98e3c7dfb5.PNG)
+
+**Since visualisation is quite large this is only a part of visualisation , you an view full visualisation inside static\images\Visualisation1.svg**
 ![11](https://user-images.githubusercontent.com/56712218/180594898-a391b8ea-12e9-4a3f-83c4-3254e4055e2a.PNG)
 
-Enter your information and View the result😎
-Voila!!🤞🤞
+
