@@ -2,6 +2,8 @@
 # coding: utf-8
 
 # In[3]:
+import requests
+import configparser
 import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
@@ -80,5 +82,5 @@ def predict():
 
 # In[18]:
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
 
