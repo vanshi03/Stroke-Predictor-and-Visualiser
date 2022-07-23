@@ -1,5 +1,5 @@
 # Stroke-Predictor-and-Visualiser
-## I created a website on stroke prediction and visualisation
+## I created a website on stroke prediction and visualisation 📜
 ### ⏩ Blueprint
 <ul>
   <li>Build a model , Language used : Python</li>
