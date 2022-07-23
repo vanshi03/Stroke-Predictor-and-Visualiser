@@ -74,7 +74,7 @@ def predict():
             fn=['gender','age','hypertension','heart_disease','ever_married','work_type','Residence_type','avg_glucose_level','bmi','smoking_status']
             cn=[1,0]
             viz = dtreeviz(model.estimators_[0],x,y,target_name="stroke",feature_names=fn,class_names=list(cn),title="1st decision tree")
-            viz.save("static/images/Visualisation2.svg")
+            viz.save("static/images/Visualisation1.svg")
             return render_template('visualisation.html',visualisation_text="RANDOM FOREST")
             
 
