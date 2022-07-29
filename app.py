@@ -49,9 +49,9 @@ def predict():
             output = round(prediction[0], 2)
             positive_percent= model.predict_proba(final_features)[0][0]*100;
             positive_percent= int(positive_percent)  
-            if output==0 :
+            if output==1:
                 return render_template('index.html', prediction_text='"Probability that you can have stroke is {}%"'.format(positive_percent))
-            elif output==1 :
+            elif output==0:
                 return render_template('index.html', prediction_text='"you cannot have stroke"')
         elif submit_button_2:
             age = request.form.get("age")
